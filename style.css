@@ -1,0 +1,401 @@
+*{
+    font-family: Kaisei Decol;
+    margin: 0;
+}
+/* menu (header) */
+.All_header_menu {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: ani 0.5s forwards;
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.navigation ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin-right: 20px; 
+}
+/* a */
+.navigation a {
+    padding: 10px;
+    text-decoration: none;
+    color: #636060;
+    font-size: 17px;
+    margin-left: 40px;
+}
+.navigation a:hover {
+    color: black;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 30px;
+}
+.text1{
+    font-size: 36px;
+    margin-top: -40px;
+    width: max-content;
+    padding: 0 10px;
+}
+.text1::before, .text1::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: black;
+    width: 200px;
+    position: relative;
+    bottom: 5px;
+}
+
+/* New arrivals  */
+
+.flexbox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 350px;
+    padding-bottom: 200px;
+}
+.book_name {
+    font-size: 20px;
+}
+/* flexbox items */
+
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 950px;
+    background-image: url(images/design/design1.avif);
+} 
+
+.centered {
+    font-size: 35px;
+    color: green;
+}
+
+/* About US */
+
+.container3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 850px;
+    background-image: url(images/AboutUs/photoattop.jpg);
+    opacity: 0;
+    animation: ani 0.5s forwards;
+}
+
+
+.centered3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: aliceblue;
+    font-family: Kaisei Decol;
+    font-size: 75px;
+    opacity: 0; 
+    animation: fadeIn ease-in 1; 
+    animation-fill-mode: forwards; 
+    animation-duration: 1s; 
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.text3::before, .text3::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: black;
+    width: 200px;
+    position: relative;
+    bottom: 4px;
+}
+
+.places{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    gap: 10%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: #456BD9;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    height: 10em;
+    width: 10em;
+  }
+.text4 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container5 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 750px;
+    background-image: url(images/AboutUs/aboutusphoto.png);
+    background-position: center;
+}
+.centered4 {
+    padding-left: 70px;
+    color: azure;
+    font-size: 25px;
+    opacity: 100%;
+    transition: 2.5s;
+}
+.photo:hover {
+    animation: photo_animate 2s forwards;
+}
+.photo centered4:hover {
+    opacity: 0;
+}
+@keyframes photo_animate {
+    100%{
+        filter: brightness(90%);
+    }
+}
+/* @keyframes photo_animate {
+    100%{
+        filter: brightness(50%);
+    }
+} */
+a {
+    text-decoration: none;
+}
+.ending {
+    width: 100%;
+    height: 250px;
+    text-decoration: none;
+}
+.container_end {
+    padding-left: 75px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_column {
+    gap: 5px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+.first_column a {
+    text-decoration: none;
+}
+.logo_end {
+    padding-right: 50px;
+}
+.TBC_end {
+    display: flex;
+    justify-content: flex-end;
+}
+.medias {
+    display: flex;
+    justify-content: flex-end;
+}
+.Instagram {
+    display: flex;
+    border-radius:50%;
+    background-color: #5968F4;
+    width: 25px;
+    height: 25px;
+}
+.second_column {
+    color: black;
+}
+
+
+.line {
+    border-bottom: 1px solid green;
+    color: green;
+    font-size: 25px;
+    font-family: 'Kaisei Decol', serif;
+    font-style: normal;
+}
+.third_column {
+    color: black;
+    padding-right: 30px;
+}
+.text_area {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.descrp {
+    width: 250px;
+    height: 50px;
+}
+
+/* BOOKS */
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/books/top.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 750px;
+}
+.text_books_centered {
+    color: whitesmoke;
+    font-size: 50px;
+}
+.container7 {
+    display: flex;
+    justify-content: center;
+}
+.shop_text {
+    font-size: 30px; 
+}
+
+.shop_text::before, .shop_text::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: black;
+    width: 200px;
+    position: relative;
+    bottom: 7px;
+}
+.books_flexbox {
+    margin: 50px auto;
+    width: 780px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.books_name {
+
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+/* services */
+.services {
+    background-image: url(images/Larioni/services.jpg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 850px;
+    opacity: 0;
+    animation: ani 0.5s forwards;
+}
+.centered5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: Kaisei Decol;
+    font-size: 75px;
+    opacity: 0; 
+    animation: fadeIn ease-in 1; 
+    animation-fill-mode: forwards; 
+    animation-duration: 1s; 
+}
+/* location */
+.container9 {
+    background-image: url(images/design/location.avif);
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 850px;
+    opacity: 0;
+    animation: ani 0.5s forwards;
+}
+.centered6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: Kaisei Decol;
+    font-size: 75px;
+    opacity: 0; 
+    animation: fadeIn ease-in 1; 
+    animation-fill-mode: forwards; 
+    animation-duration: 1s; 
+}
