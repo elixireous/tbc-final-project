@@ -217,7 +217,9 @@
 a {
     text-decoration: none;
 }
+/* ENDING */
 .ending {
+    padding-top: 50px;
     width: 100%;
     height: 250px;
     text-decoration: none;
@@ -236,7 +238,6 @@ a {
     justify-content: flex-start;
     flex-direction: column;
     text-decoration: none;
-    padding-bottom: 30px;
 }
 .first_column a {
     text-decoration: none;
@@ -398,4 +399,34 @@ a {
     animation: fadeIn ease-in 1; 
     animation-fill-mode: forwards; 
     animation-duration: 1s; 
+}
+.container10 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+}
+.text5 {
+    font-size: 50px;
+}
+.text5::before, .text5::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: black;
+    width: 200px;
+    position: relative;
+    bottom: 12px;
+}
+/* our services */
+.container11 {
+    display: flex;
+}
+.services_text {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
