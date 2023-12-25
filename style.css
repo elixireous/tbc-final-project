@@ -505,3 +505,8 @@ a {
     position: relative;
     bottom: 12px;
 }
+
+.buy_product {
+    text-align: center;
+    padding-left: 100px;
+}
