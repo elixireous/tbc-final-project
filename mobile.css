@@ -102,6 +102,19 @@
     .shop_text::before, .shop_text::after {
         width: 100px;
     }
+    .container8 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .books_flexbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100px;
+        flex-direction: column;
+    }
     /* end */
     .ending {
         width: 100%;
