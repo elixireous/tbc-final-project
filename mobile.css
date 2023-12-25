@@ -136,4 +136,13 @@
         padding-right: 15px;
         padding-bottom: 62px;
     }
+    /* our services */
+
+    .centered5 {
+        font-size: 50px;
+    }
+    .flex-box2 {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
