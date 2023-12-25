@@ -137,7 +137,16 @@
         padding-bottom: 62px;
     }
     /* our services */
-
+    .text5 {
+        font-size: 18px;
+    }
+    .text5::before, .text5::after {
+        display: inline-block;
+        height: 2px;
+        bottom: 6px;
+        background-color: black;
+        width: 100px;
+    }
     .centered5 {
         font-size: 50px;
     }
