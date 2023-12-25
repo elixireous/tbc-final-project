@@ -421,6 +421,13 @@ a {
 /* our services */
 .container11 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/universities/ilia\ university.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 750px;
 }
 .services_text {
     padding-top: 30px;
@@ -429,4 +436,15 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.text6 {
+    color: black;
+    font-size: 80px;
+    opacity: 100%;
+    transition: 2.5s;
+}
+
+.container11 text6:hover {
+    opacity: 0%;
 }
