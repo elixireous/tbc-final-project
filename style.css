@@ -423,6 +423,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: url(images/universities/ilia\ university.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -439,12 +440,15 @@ a {
 }
 
 .text6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
-    font-size: 80px;
-    opacity: 100%;
-    transition: 2.5s;
+    background-color: azure;
+    font-size: 25px;
+    opacity: 0%;
 }
 
-.container11 text6:hover {
-    opacity: 0%;
+.text6:hover {
+    opacity: 100%;
 }
